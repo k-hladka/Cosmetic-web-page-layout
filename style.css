@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial sans-serif;
+}
+
+:root {
+    --background: #d5ddd6;
+    --background-header: #ffffff;
+    --background-button: #f9f8f6;
+
+    --header-elements-hover: rgba(76, 82, 76, 0.62);
+    --hr: #fcfcfc;
+    --button: #cc554e;
+    --font-button: #eef2ed;
+}
+
+html {
+    background-color: var(--background);
+}
+
+header, .header-info button {
+    text-transform: uppercase;
+    font-weight: 500;
+    background-color: var(--background-header);
+}
+
+.header-info button {
+    background: var(--background-button);
+    padding: 5px;
+    border: none;
+}
+
+.facebook, .twitter, .pinterest {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    margin-right: 5px;
+    background: url("images/logo_sites/facebook_twitter_pinterest.png");
+}
+
+.twitter {
+    background-position-x: 38px;
+}
+
+.pinterest {
+    background-position-x: 16px;
+}
+
+.facebook:hover, .twitter:hover, .pinterest:hover {
+    cursor: pointer;
+    background: url("images/logo_sites/facebook_twitter_pinterest.png");
+}
+
+.facebook:hover {
+    background-position: 55px 17px;
+}
+
+.twitter:hover {
+    background-position: 37px 17px;
+}
+
+.pinterest:hover {
+    background-position: 15px 18px;
+}
+
+.cosmetics {
+    height: 600px;
+    position: relative;
+    /*background: yellow;*/
+}
+
+.women {
+    width: 729px;
+    height: 490px;
+    background: url(images/cosmetics/women.jpg) no-repeat;
+    float: right;
+}
+
+.text {
+    font-size: 1.5rem;
+    height: auto;
+    position: absolute;
+    top: 30%;
+    left: 15%;
+}
+
+.text p:first-child {
+    width: 25%;
+}
+
+.text p:nth-child(2) {
+    font-size: 1rem;
+    padding-top: 10px;
+    width: 40%;
+    line-height: 1.8rem;
+}
+
+.text button {
+    border: none;
+    background: var(--button);
+    color: var(--font-button);
+    padding: 10px 15px;
+    text-transform: uppercase;
+    margin-top: 10px;
+
+}
+
+.text button:hover {
+    cursor: pointer;
+}
+
+.text span {
+    text-transform: uppercase;
+}
+
+.flowers {
+    width: 500px;
+    height: 500px;
+    float: left;
+    position: absolute;
+    bottom: 0;
+    background: url(images/cosmetics/flower.png) no-repeat;
+    rotate: 88deg;
+    left: -232px;
+}
+
+.header-info {
+    line-height: 3;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    border-bottom: 1px solid var(--hr);
+}
+
+.header-info :nth-child(2) {
+    font-size: 1.5rem;
+}
+
+.header-info > div {
+    border-right: 1px solid var(--hr);
+}
+
+.header-info div:last-child {
+    border: none;
+}
+
+.header-info span {
+    text-transform: none;
+    font-weight: bold;
+}
+
+.header-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-menu div:hover {
+    cursor: pointer;
+    color: var(--header-elements-hover);
+}
+
+.header-menu div {
+    padding: 10px;
+}
+
+.mnemonic-symbol {
+    display: inline-block;
+    rotate: -90deg;
+}
